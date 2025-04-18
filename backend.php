@@ -30,23 +30,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-if (isset($_GET['delete'])) {
-    $id = $_GET['delete'];
-    mysqli_query($con, "DELETE FROM etudient WHERE id=$id");
-}
 
-if (isset($_GET['edit'])) {
-    $id_update = $_GET['edit'];
-    $update_mode = true;
-    $result = mysqli_query($con, "SELECT * FROM etudient WHERE id=$id_update");
-    $row = mysqli_fetch_assoc($result);
-
-    $nom = $row['nom'];
-    $prenom = $row['prenom'];
-    $email = $row['email'];
-    $date_naissance = $row['date_naissance'];
-    $adresse = $row['adresse'];
-    $niveau = $row['niveau'];
-    $cin = $row['cin'];
-}
 ?>
