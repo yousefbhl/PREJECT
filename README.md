@@ -1,5 +1,5 @@
-# PREJECT
-PREEJCT AVEC MON EQUIPE
+# PROJECT
+PROEJCT AVEC MON EQUIPE
 #  Gestion des Étudiants
 
 Une petite application PHP pour gérer les étudiants (ajout, modification, suppression).
